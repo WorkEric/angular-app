@@ -1,6 +1,6 @@
 //'use strict';
 
-angular.module('spBlogger',['ui.router','spBlogger.posts', 'spBlogger.admin'])
+angular.module('spBlogger',['ngResource', 'ui.router','spBlogger.posts', 'spBlogger.admin'])
 	.run(['$state', 
 		function($state){
 			$state.go('allPosts');

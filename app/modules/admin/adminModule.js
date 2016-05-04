@@ -1,7 +1,7 @@
 'use strict'
  
  
-angular.module('spBlogger.admin',['spBlogger.admin.controllers']).config(['$stateProvider',function($stateProvider){
+angular.module('spBlogger.admin',['spBlogger.admin.controllers','spBlogger.admin.services']).config(['$stateProvider',function($stateProvider){
 	$stateProvider.state('admin',{
 		url:'/admin',
 		abstract:true, //vuol dire che gli altri controller sotto di lui sono suoi figli
