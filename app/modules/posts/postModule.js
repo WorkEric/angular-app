@@ -1,4 +1,4 @@
-angular.module('spBlogger.posts', ['spBlogger.posts.controllers', 'spBlogger.posts.services'])
+angular.module('spBlogger.posts', ['spBlogger.posts.controllers', 'spBlogger.posts.services', 'spBlogger.posts.directives'])
     .config(['$stateProvider', '$locationProvider',
         function($stateProvider,$locationProvider){
         $stateProvider.state('allPosts',{
